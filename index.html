@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbe33da513.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="total_player">
+        <video class="video" src="bunny.mp4"></video>
+        <div class="total_controls">
+
+        <div class="total_progress">
+            <div class="progress_filled"></div>
+            </div>
+        
+        <div class="controls">
+                
+            <div class="lc">
+            <i class="play fas fa-play"></i>
+            <div class="time">00:00 / 00:00</div>
+            <button class="prev" name="seek" value="-10"><i class="fas fa-backward"></i> 10s</button>
+            <button class="next" name="seek" value="10">10s <i class="fas fa-forward"></i></button>
+            </div>
+
+            <div class="rc">
+            <i class="volicon fas fa-volume-up"></i>
+            <input id="volume" name="volume" type="range" min="0" max="1" step="0.05" value="1">
+            <label for="volume" class="vollabel">100</label>
+
+            <input id="speed" type="range" min="0.5" max="2" step="0.1" value="1">
+            <label for="speed" class="spdlabel">1X</label>
+
+            <i class="fullscreen fas fa-expand"></i>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

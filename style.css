@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+.total_player{
+    width: 90vw;
+    margin: auto;
+    margin-top: 1vh;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.video{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    margin: 0.5em auto auto;
+}
+
+.total_progress{
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+    height: 5px;
+}
+
+.progress_filled{
+    background-color: orange;
+    flex-basis:30%;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0 0 0;
+}
+
+.total_controls{
+    transform: translateY(100%) translateY(3px);
+    transition: all .3s;
+    margin: 0 0 0.5em 0;
+}
+
+.total_player:hover .total_controls{
+    transform: translateY(0);
+}
+
+.total_player:hover .total_progress{
+    height: 15px;
+}
+
+.lc{
+    display: flex;
+    flex-basis: 50%;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.rc{
+    display: flex;
+    flex-basis: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.play{
+    color: white;
+    background: transparent;
+    border: 0;
+    padding: 0 1em 0 2em;
+    margin: 0 0 0 1em;
+    cursor: pointer;
+    width: 1em;
+}
+
+.time{
+    color: white;
+    text-align: center;
+    padding: 0 0 0 0;
+    margin: 0 0 0 1em;
+    width: 8em;
+}
+
+.prev{
+    color: white;
+    background: transparent;
+    margin: 0 0 0 0;
+    border: none;
+    cursor: pointer;
+}
+
+.next{
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.volicon{
+    color: white;
+}
+
+#volume{
+    cursor: pointer;
+    color: yellowgreen;
+    width: 7em;
+}
+
+.vollabel{
+    color: white;
+    margin: 0 0 0 0;
+    width: 1em;
+
+}
+
+#speed{
+    width: 7em;
+    margin: 0 0 0 2em;
+    cursor: pointer;
+}
+
+.spdlabel{
+    color: white;
+    margin: 0 0 0 0.3em;
+    width: 1em;
+}
+
+
+.fullscreen{
+    color: white;
+    background: transparent;
+    border: 0;
+    padding: 0 1em 0 0;
+    margin: 0 1em 0 2em;
+    cursor: pointer;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 100%;
+    margin: 0 5px;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+    background: rgba(255,255,255,0.8);
+    border-radius: 1.3px;
+    border: 0.2px solid rgba(1, 1, 1, 0);
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: yellowgreen;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.5px;
+    box-shadow:0 0 2px rgba(0,0,0,0.2);
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #C1EAEA;
+  }
+  
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+    background: #ffffff;
+    border-radius: 1.3px;
+    border: 0.2px solid rgba(1, 1, 1, 0);
+  }
+  
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: #ffc600;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+  @media only screen and (max-width: 1100px){
+      .total_player{
+          height: 50vh;
+      }
+
+      .play{
+          padding: 0;
+          margin: 4px 10px 0 15px;
+          font-size: 10px;
+      }
+      
+      .time{
+          padding: 4px 0 0 0;
+          margin: 0 0 0 0;
+          font-size: 10px;
+          width: 70px;
+          align-items: center;
+      }
+
+      .prev{
+          font-size: 7px;
+          margin: 0 10px 0 0;
+          padding: 0 0 0 0;
+      }
+
+      .next{
+          font-size: 7px;
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+      }
+
+      .volicon{
+          font-size: 10px;
+      }
+
+      #volume{
+       margin: 0 0 0 0;
+       width: 30px;
+      }
+
+      .vollabel{
+        margin: 0 0 0 0;
+        font-size: 10px;
+      }
+
+      #speed{
+          margin: 0 0 0 0;
+          width: 30px;
+      }
+
+      .spdlabel{
+          margin: 0 0 0 0;
+          font-size: 10px;
+      }
+
+      .fullscreen{
+          margin: 0 0 0 0;
+          font-size: 10px;
+      }
+
+
+  }
